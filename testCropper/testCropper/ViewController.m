@@ -99,13 +99,15 @@
 #pragma mark - photoViewControllerDelegate
 - (void)imageCropper:(PhotoViewController *)cropperViewController didFinished:(UIImage *)editedImage
 {
-    [cropperViewController dismissViewControllerAnimated:YES completion:nil];
-    CATransition *animation = [CATransition animation];
-    animation.type = kCATransitionMoveIn;
-    animation.subtype = kCATransitionFromTop;
-    [_btn setBackgroundImage:editedImage forState:UIControlStateNormal];
-    animation.duration = 0.4f;
-    [_btn.layer addAnimation:animation forKey:nil];
+    [cropperViewController dismissViewControllerAnimated:YES completion:^{
+        CATransition *animation = [CATransition animation];
+        animation.duration = 0.4f;
+        animation.type = kCATransitionMoveIn;
+        animation.subtype = kCATransitionFromBottom;
+        [_btn.layer addAnimation:animation forKey:nil];
+        
+        [_btn setBackgroundImage:editedImage forState:UIControlStateNormal];
+    }];
 }
 - (void)imageCropperDidCancel:(PhotoViewController *)cropperViewController
 {
