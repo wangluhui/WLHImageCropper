@@ -90,7 +90,7 @@
 //    photoVC.btnBackgroundColor = COLOR_NAV;
     //    photoVC.backImage = ;自定义返回按钮图片
     photoVC.mode = PhotoMaskViewModeCircle;
-    photoVC.cropWidth =240;
+    photoVC.cropWidth = CGRectGetWidth(self.view.bounds) - 80;
     photoVC.isDark = YES;
     photoVC.delegate = self;
 //    photoVC.lineColor = COLOR_NAV;
