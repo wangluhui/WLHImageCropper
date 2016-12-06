@@ -4,7 +4,17 @@
 //
 //  Created by wanglh on 15/4/27.
 //  Copyright (c) 2015年 Kule Yang. All rights reserved.
-//
+/**
+ 
+ *******************************************************
+ *
+ * 感谢您的支持， 如果下载的代码在使用过程中出现BUG或者其他问题
+ * 您可以发邮件到183049213@qq.com
+ * github下载地址 https://github.com/wangluhui/WLHImageCropper
+ *
+ *******************************************************
+ 
+ */
 
 #import <UIKit/UIKit.h>
 
