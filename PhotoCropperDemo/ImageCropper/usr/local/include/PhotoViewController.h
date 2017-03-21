@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, PhotoMaskViewMode) {
 
 @property (nonatomic,weak) id<PhotoViewControllerDelegate> delegate;
 @property (nonatomic,strong) UIImage *oldImage;
-@property (nonatomic,assign) PhotoMaskViewMode mode;       // 圆形 or 正方形
+@property (nonatomic,assign) PhotoMaskViewMode mode;       // 圆形 or 长方形
 @property (nonatomic,assign) CGFloat cropWidth;            // 裁剪宽度
 @property (nonatomic,assign) CGFloat cropHeight;           // 裁剪高度
 @property (nonatomic,strong) UIColor *lineColor;           // 线条颜色
